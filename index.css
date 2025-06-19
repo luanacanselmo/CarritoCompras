@@ -1,0 +1,303 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.boton {
+  all: unset;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.banner {
+  margin-top: 65px;
+  background: url('imagenes/fondoprueba .png') center/cover no-repeat;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.banner h1 {
+  font-size: 40px;
+  margin-bottom: 1px;
+}
+
+.banner p {
+  font-size: 20px;
+}
+
+.categories {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category-card {
+  background-color: #fff;
+  padding: 20px;
+  width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+/* Carrusel de productos */
+.game-section {
+  padding: 50px 0;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.game-section h2 {
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #333;
+
+}
+
+/* Estilos para el carrusel */
+.owl-carousel {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.owl-carousel .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.owl-theme .owl-nav {
+  margin-top: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s ease;
+  pointer-events: auto;
+}
+
+.owl-theme .owl-nav .owl-prev {
+  left: 10px;
+}
+
+.owl-theme .owl-nav .owl-next {
+  right: 10px;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Remove default button styles */
+.owl-theme .owl-nav [class*='owl-']:focus {
+  outline: none;
+}
+
+/* Hide the extra arrow that appears on top */
+.owl-theme .owl-nav .owl-prev-icon,
+.owl-theme .owl-nav .owl-next-icon {
+  display: none;
+}
+
+.item-image {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.item-desc {
+  padding: 20px;
+  text-align: center;
+}
+
+.item-desc h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.item-desc p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.buy-now {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now:hover {
+  background-color: #555;
+}
+
+.owl-theme .owl-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background: #333;
+}
+
+.buy-now {
+  background-color: #323232; /* Cambiar color de fondo al pasar el mouse */
+
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Relleno interno para que parezca un botón */
+  text-align: center; /* Alinear el texto al centro */
+  text-decoration: none; /* Quitar el subrayado */
+  display: inline-block; /* Mostrar el enlace como bloque inline */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambiar el cursor a mano */
+}
+
+.buy-now:hover {
+  background-color: #c59ccd; /* Cambiar color cuando el botón es presionado */
+}
+
+.buy-now:active {
+  background-color: #c59ccd; /* Cambiar color cuando el botón es presionado */
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .banner {
+    padding: 60px 10px;
+  }
+
+  .banner h1 {
+    font-size: 28px;
+  }
+
+  .banner p {
+    font-size: 16px;
+  }
+
+  .categories h2 {
+    font-size: 28px;
+  }
+
+  .category-grid {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .category-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .owl-carousel .item {
+    width: 100%; /* Ajusta el ancho para que ocupe el 100% de la pantalla */
+}
+
+.item-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Asegura que la imagen se ajuste sin distorsionarse */
+  border-radius: 10px; /* Si deseas que la imagen tenga bordes redondeados */
+}
+
+ .owl-theme .owl-nav [class*='owl-'] {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .owl-theme .owl-nav .owl-prev {
+    left: 5px;
+  }
+
+  .owl-theme .owl-nav .owl-next {
+    right: 5px;
+  } 
+
+ 
+}
